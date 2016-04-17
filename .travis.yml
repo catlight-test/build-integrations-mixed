@@ -1,0 +1,10 @@
+language: csharp
+
+matrix:
+  include:
+    - env: PROJECT=CS-Successful
+    - env: PROJECT=CS-Failed  
+  allow_failures:
+    - env: PROJECT=CS-Failed    
+  
+solution: $PROJECT/$PROJECT.sln
